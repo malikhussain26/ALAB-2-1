@@ -6,6 +6,9 @@ const morgan = require("morgan");
 const router = require('./routes/routes.js')
 const path = require('path');
 
+// I can't figure out why the style is not applying to the page
+app.use(express.static('public'));
+
 // Part 1 - Routes, Templates, and Views
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -54,13 +57,13 @@ app.use(morgan("tiny"))
 // app.use(express.static("./assets"));
 
 // Part 3: Exploring Response Options
-// Serve static files from the public folder
-app.use(express.static('public'));
+// Serve static files from the public folder (cant get download imageto work)
+// app.use(express.static('public'));
 
-// Route to serve the image file
-app.get('/image', (req, res) => {
-  res.sendFile(__dirname + '/public/image.jpg');
-});
+// // Route to serve the image file
+// app.get('/image', (req, res) => {
+//   res.sendFile(__dirname + '/public/image.jpg');
+// });
 
 // define the template engine
 // take a file, read it, and render an output

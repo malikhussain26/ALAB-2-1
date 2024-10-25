@@ -14,8 +14,33 @@ code {
   border-radius: 10px;
 }
 
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 a {
-  color: #0079c0;
+  text-decoration: none;
+  color: #337ab7;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+.download-button {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #23527c;
 }
 
 a:hover {

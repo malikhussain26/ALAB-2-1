@@ -1,0 +1,10 @@
+h1 Download Image
+a(href="/download-image" download) Download Image
+img(src="/image.jpg")
+button(onclick="downloadImage()") Download
+script
+  function downloadImage() {
+    window.location.href = '/download-image';
+  }
+  script
+  console.log("Download page rendered");

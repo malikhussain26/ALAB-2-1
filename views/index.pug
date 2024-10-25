@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title My Express App
+  body
+    h1 Welcome to the Home Page!
+    p This is the main content of the home page.
+    img(src="/image.jpg")
+    br
+    a(href="/download") Download Image
+    br
+    a(href="/about") About Us
+    br
+    a(href="/user") User
+    form(method="POST" action="/submit")
+      label(for="search")
+      input(type="text" id="search" name="search" placeholder="Search...")
+      button(type="submit") Submit
